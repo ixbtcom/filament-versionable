@@ -84,26 +84,26 @@ public static function getPages(): array
 }
 ```
 
-Add `RevisionsAction` to your edit/view pages, this action would only appear when there are any versions for the model you are viewing/editing.
+Add `RevisionsActionTable` to your edit/view pages, this action would only appear when there are any versions for the model you are viewing/editing.
 
 ```php
-use Mansoor\FilamentVersionable\Page\RevisionsAction;
+use Mansoor\FilamentVersionable\Page\RevisionsActionTable;
 
 protected function getHeaderActions(): array
 {
     return [
-        RevisionsAction::make(),
+        RevisionsActionTable::make(),
     ];
 }
 ```
 
-You can also add the `RevisionsAction` to your table.
+You can also add the `RevisionsActionTable` to your table.
 
 ```php
-use Mansoor\FilamentVersionable\Table\RevisionsAction;
+use Mansoor\FilamentVersionable\Table\RevisionsActionTable;
 
 $table->actions([
-    RevisionsAction::make(),
+    RevisionsActionTable::make(),
 ]);
 ```
 
