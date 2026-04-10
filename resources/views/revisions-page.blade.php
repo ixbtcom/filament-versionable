@@ -1,4 +1,5 @@
 <x-filament-panels::page>
+    @if ($this->hasRevisions())
     <div>
         <div class="mb-4 grid grid-cols-1 gap-6 lg:grid-cols-4">
             <div class="col-span-3 flex justify-between">
@@ -132,4 +133,11 @@
             </div>
         </div>
     </div>
+    @else
+        <x-filament::empty-state
+            :heading="__('filament-versionable::page.no_revisions')"
+            icon="heroicon-o-clock"
+            icon-color="gray"
+        />
+    @endif
 </x-filament-panels::page>
