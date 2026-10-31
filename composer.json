@@ -27,13 +27,15 @@
     },
     "require-dev": {
         "filament/upgrade": "^5.0",
-        "larastan/larastan": "^3.0",
-        "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^8.8.0",
-        "orchestra/testbench": "^10.0|^11.0",
-        "pestphp/pest": "^3.7|^4.0",
-        "pestphp/pest-plugin-arch": "^3.0|^4.0",
-        "pestphp/pest-plugin-laravel": "^3.0|^4.0"
+        "larastan/larastan": "^3.13",
+        "laravel/framework": "^13.0",
+        "laravel/pint": "^1.32.1",
+        "nunomaduro/collision": "^8.9.5",
+        "orchestra/testbench": "^11.3",
+        "pestphp/pest": "^4.7.8",
+        "pestphp/pest-plugin-arch": "^4.0.2",
+        "pestphp/pest-plugin-laravel": "^4.1",
+        "phpunit/phpunit": "^12.5.33"
     },
     "autoload": {
         "psr-4": {
