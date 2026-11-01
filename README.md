@@ -19,6 +19,15 @@ Efforlessly manage your Eloquent model revisions in Filament. It includes:
 
 ## Installation
 
+This fork is maintained in [GitLab](https://glab.ixbt.site/packages/filament-versionable) on branch `4.x`.
+To select it instead of the upstream package, configure this VCS repository in the consuming
+application (GitLab access is required); the Composer package name remains `mansoor/filament-versionable`:
+
+```bash
+composer config repositories.filament-versionable vcs https://glab.ixbt.site/packages/filament-versionable.git
+composer require mansoor/filament-versionable:4.x-dev
+```
+
 You can install the package via composer:
 
 ```bash
